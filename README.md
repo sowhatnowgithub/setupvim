@@ -9,14 +9,10 @@ vim - normal
 nvim after this process , this process is best for linux and mac os 
 <img width="1470" alt="Screenshot 2024-07-22 at 6 51 48 PM" src="https://github.com/user-attachments/assets/69db0ddc-e36f-4741-9880-8303d6b5d041">
 
-Let us first clone the the git hub repo 
+Let us first clone the the git hub repo  and give executable permsissions to the file "setUp.sh" and execute the file
 ```
 git clone https://github.com/sowhatnowgithub/setupvim.git
 cd setupvim
-```
-
-give executable permsissions to the file "setUp.sh" and execute the file
-```
 chmod +x setUp.sh
 ./setUp.sh
 ```
