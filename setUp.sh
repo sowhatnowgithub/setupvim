@@ -42,7 +42,5 @@ if [[ $ripgrep != "0" ]]; then
 	fi 
 fi 
 
-echo "End has been reached read the further procedure for complete setup in the README.md "
-cat README.md
 
-
+nvim
