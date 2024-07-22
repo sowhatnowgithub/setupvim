@@ -23,7 +23,7 @@ echo "want to install go, 0 to skip, press any to install "
 read go
 if [[ $go != "0" ]]; then
 	if [[ $input == "1" ]]; then
-		sudo apt install go
+		sudo apt install golang
 	else
 		arch -arm64 brew install go # replace the -arm with arch64 for intel mac
   	fi
