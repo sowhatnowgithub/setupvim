@@ -1,5 +1,6 @@
 # setupvim
-This is the setUp of neovim , from various resources ,like utube and git pages \n
+This is the setUp of neovim , from various resources ,like utube and git pages
+
 Let us first clone the the git hub repo 
 ```
 
@@ -11,6 +12,7 @@ chmod +x setUp.sh
 ./setUp.sh
 ```
 we have to use press the following commands to install all the plugin and dependencoes 
+
 like this default has gopls which an lsp for go , hence u will be prompted to install few and ripgrep a powerful tool to acces file system
 1.neovim
 2.go (cmp-lsp)
@@ -35,11 +37,14 @@ redo the process , that is press the above two commands again separately again ,
 
 
 Now , to activate the most of the features 
+
 ```
 ctrl+\ to open the terminal resize the window
 :NvimTreeOpen
 ```
 
 I think this would allow the best vim , plugins
+
 P.S :
+
 There might be bugs in the script.
