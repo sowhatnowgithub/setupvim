@@ -16,7 +16,7 @@ we have to use press the following commands to install all the plugin and depend
 
 like this default has gopls which an lsp for go , hence u will be prompted to install few and ripgrep a powerful tool to acces file system
 1.neovim
-2.go (cmp-lsp)
+2.go (cmp-lsp) NOTE: go is 500MB , remaing all are light , The process won't be bothered even if u don't install , press continue if waring comes ,
 3.ripgrep (telescope)
 
 Note: there are issues with bufferline , but don't worry press enter if the error shows , main functionality is not bothered ny this
