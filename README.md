@@ -4,6 +4,7 @@ This is the setUp of neovim , from various resources ,like utube and git pages
 Let us first clone the the git hub repo 
 ```
 git clone https://github.com/sowhatnowgithub/setupvim.git
+cd setupvim
 ```
 
 give executable permsissions to the file "setUp.sh" and execute the file
