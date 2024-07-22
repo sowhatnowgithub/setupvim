@@ -1,5 +1,5 @@
 # setupvim
-This is the setUp of neovim , from various resources ,like utube and git pages
+This is the setUp of neovim , from various resources ,like utube and git pages \n
 Let us first clone the the git hub repo 
 ```
 
