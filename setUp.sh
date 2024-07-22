@@ -18,7 +18,6 @@ touch ~/.config/nvim/init.lua
 
 mv init.lua ~/.config/nvim/init.lua
 
-rm init.lua
 
 echo "want to install go, 0 to skip, press any to install "
 read go
@@ -27,6 +26,7 @@ if [[ $go != "0" ]]; then
 		sudo apt install go
 	else
 		arch -arm64 brew install go # replace the -arm with arch64 for intel mac
+  	fi
 fi 
 
 go install golang.org/x/tools/gopls@latest
@@ -43,7 +43,6 @@ if [[ $ripgrep != "0" ]]; then
 fi 
 
 echo "End has been reached read the further procedure for complete setup in the README.md "
-
-cat README.nd
+cat README.md
 
 
