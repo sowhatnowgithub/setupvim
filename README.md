@@ -1,4 +1,5 @@
 # setupvim
+
 This is the setUp of neovim , from various resources ,like utube and git pages
 
 vim - normal
@@ -7,6 +8,7 @@ vim - normal
 
 nvim after this process , this process is best for linux and mac os 
 <img width="1470" alt="Screenshot 2024-07-22 at 6 51 48 PM" src="https://github.com/user-attachments/assets/69db0ddc-e36f-4741-9880-8303d6b5d041">
+
 Let us first clone the the git hub repo 
 ```
 git clone https://github.com/sowhatnowgithub/setupvim.git
@@ -21,10 +23,14 @@ chmod +x setUp.sh
 we have to use press the following commands to install all the plugin and dependencoes 
 
 like this default has gopls which an lsp for go , hence u will be prompted to install few and ripgrep a powerful tool to acces file system
+
 1.neovim
+
 2.go (cmp-lsp) NOTE: go is 500MB , remaing all are light , The process won't be bothered even if u don't install , press continue if waring comes ,
+
 3.gopls (this is installed through go , through mason-nvim plugin, if u don't want to install go , then this will not be needed , this is an language server protocol for lsp)
-3.ripgrep (telescope)
+
+4.ripgrep (telescope)
 
 Note: there are issues with bufferline , but don't worry press enter if the error shows , main functionality is not bothered ny this
 
@@ -43,7 +49,9 @@ enter the noraml mode , and enter : and type the following
 :q
 ```
 redo the process , that is press the above two commands again separately again , to be sure the final installation is done
+
 In second time , enter the following
+
 At any point if mason troubles that means , mason-nvim is showing trouble to me , maybe I configurd wrong 
 ```
 :MasonUpdate  
