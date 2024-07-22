@@ -32,7 +32,7 @@ nvim
 enter the noraml mode , and enter : and type the following
 ```
 :PackerSync
-:wq
+:q
 ```
 redo the process , that is press the above two commands again separately again , to be sure the final installation is done
 
