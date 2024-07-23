@@ -6,7 +6,7 @@ vim.cmd([[
 	set relativenumber
 	set tabstop=4
 	set mouse=a
-	set shiftwidth=4
+	set shiftwidth=4a
 	set autoindent
 	colorscheme desert
 ]])
@@ -39,6 +39,7 @@ require('packer').startup(function(use)
 	use 'hrsh7th/nvim-cmp'
 	use 'L3MON4D3/LuaSnip'
 	use 'saadparwaiz1/cmp_luasnip'
+	use 'rafamadriz/friendly-snippets'
 
 	-- gitgutter this is for git hub
 	use 'airblade/vim-gitgutter'
@@ -46,7 +47,7 @@ require('packer').startup(function(use)
 	-- lualine a status box
 	use {
 		'nvim-lualine/lualine.nvim',
-		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+		requires = { 'nvim-tree/nvim:-web-devicons', opt = true }
 	}
 	-- nvim-visual-multi , select a word and press ctrl+n this will select the next same word and we have multicursor
 	 use 'mg979/vim-visual-multi'
@@ -79,6 +80,7 @@ end)
 
 
 
+	require("luasnip.loaders.from_vscode").lazy_load()
 
 require("mason").setup()
   -- Set up nvim-cmp.
@@ -88,16 +90,16 @@ require("mason").setup()
     snippet = {
       -- REQUIRED - you must specify a snippet engine
       expand = function(args)
-        vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
-        -- require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+        -- vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
+         require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
         -- require('snippy').expand_snippet(args.body) -- For `snippy` users.
         -- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
         -- vim.snippet.expand(args.body) -- For native neovim snippets (Neovim v0.10+)
       end,
     },
     window = {
-      -- completion = cmp.config.window.bordered(),
-      -- documentation = cmp.config.window.bordered(),
+     completion = cmp.config.window.bordered(),
+      documentation = cmp.config.window.bordered(),
     },
     mapping = cmp.mapping.preset.insert({
       ['<C-b>'] = cmp.mapping.scroll_docs(-4),
@@ -107,9 +109,9 @@ require("mason").setup()
       ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
     }),
     sources = cmp.config.sources({
-      { name = 'nvim_lsp' },
-      { name = 'vsnip' }, -- For vsnip users.
-      -- { name = 'luasnip' }, -- For luasnip users.
+     -- { name = 'nvim_lsp' },
+     -- { name = 'vsnip' }, -- For vsnip users.
+      { name = 'luasnip' }, -- For luasnip users.
       -- { name = 'ultisnips' }, -- For ultisnips users.
       -- { name = 'snippy' }, -- For snippy users.
     }, {
@@ -202,6 +204,4 @@ require("bufferline").setup{
     sort_by = 'insert_after_current',
   }
 }
-
-
 
