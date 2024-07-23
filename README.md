@@ -1,5 +1,10 @@
 # setupvim
-
+#the following cmds rm the previos nvim config , if u want to save ur config mv the following into a backup
+```
+rm -rf ~/.config/nvim                                                     ─╯
+rm -rf ~/.local/state/nvim
+rm -rf ~/.local/share/nvim
+```
 This is the setUp of neovim , from various resources ,like utube and git pages
 
 vim - normal
