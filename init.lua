@@ -6,7 +6,7 @@ vim.cmd([[
 	set relativenumber
 	set tabstop=4
 	set mouse=a
-	set shiftwidth=4a
+	set shiftwidth=4
 	set autoindent
 	colorscheme desert
 ]])
